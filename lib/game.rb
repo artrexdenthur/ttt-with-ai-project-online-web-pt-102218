@@ -32,7 +32,7 @@ class Game
     [player_1.token, player_2.token].each do |p|
       plays = []
       board.cells.each_with_index do |cell, index|
-        if cell == t
+        if cell == plays
           plays << index
           return true
         end
