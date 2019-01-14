@@ -29,11 +29,12 @@ class Game
     
   def won?
     puts "hello"
-    [player_1, player_2].each do |t|
+    [player_1.token, player_2.token].each do |p|
       plays = []
       board.cells.each_with_index do |cell, index|
         if cell == t
           plays << index
+          return true
         end
       end
       puts plays
