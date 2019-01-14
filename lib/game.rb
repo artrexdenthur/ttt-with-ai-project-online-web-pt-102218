@@ -29,8 +29,9 @@ class Game
     
   def won?
     PLAYER_TOKENS.each do |t|
-      plays = board.find_all { |play| play == t }
+      plays = board.each_with_index { |play| play == t }
     end
+    false
   end
     
 end
