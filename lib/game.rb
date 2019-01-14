@@ -41,6 +41,6 @@ class Game
   end
   
   def has_winning_combo?(plays_arr)
-    
+    WIN_COMBINATIONS.each 
     
 end
