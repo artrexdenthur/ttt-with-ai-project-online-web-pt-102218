@@ -40,14 +40,14 @@ class Game
     return false
   end
   
-  def has_winning_combo?(plays_arr)
-    WIN_COMBINATIONS.each do |combo|
-      unless combo.map { |cell| plays_arr.include?(cell) }.include?(false)
-        return true
-      end
-    end
-    return false
-  end
+  # def has_winning_combo?(plays_arr)
+  #   WIN_COMBINATIONS.each do |combo|
+  #     unless combo.map { |cell| plays_arr.include?(cell) }.include?(false)
+  #       return true
+  #     end
+  #   end
+  #   return false
+  # end
   
   def get_winning_combo(plays_arr)
     WIN_COMBINATIONS.each do |combo|
