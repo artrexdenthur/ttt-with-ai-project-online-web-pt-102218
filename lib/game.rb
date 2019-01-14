@@ -31,6 +31,7 @@ class Game
     puts "hello"
     puts board.cells
     [player_1.token, player_2.token].each do |p|
+      puts 'looping'
       plays = []
       board.cells.each_with_index do |cell, index|
         if cell == plays
