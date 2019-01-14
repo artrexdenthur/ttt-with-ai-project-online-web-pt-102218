@@ -35,7 +35,7 @@ class Game
           plays << index
         end
       end
-      return true if has_winning_combo?(plays)
+      return get_winning_combo(plays) if get_winning_combo(plays)
     end
     return false
   end
