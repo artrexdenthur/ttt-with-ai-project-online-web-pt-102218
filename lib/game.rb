@@ -28,6 +28,7 @@ class Game
   end
     
   def won?
+    puts "hello"
     PLAYER_TOKENS.each do |t|
       plays = []
       board.cells.each_with_index do |cell, index|
