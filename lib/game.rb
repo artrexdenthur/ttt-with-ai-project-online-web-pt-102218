@@ -29,7 +29,7 @@ class Game
     
   def won?
     puts "hello"
-    PLAYER_TOKENS.each do |t|
+    [player_1, player_2].each do |t|
       plays = []
       board.cells.each_with_index do |cell, index|
         if cell == t
