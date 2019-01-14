@@ -39,5 +39,8 @@ class Game
     end
     return false
   end
+  
+  def has_winning_combo?(plays_arr)
+    
     
 end
