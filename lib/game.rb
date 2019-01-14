@@ -35,7 +35,7 @@ class Game
           plays << index
         end
       end
-      puts plays
+      puts p, plays
     end
     return false
   end
