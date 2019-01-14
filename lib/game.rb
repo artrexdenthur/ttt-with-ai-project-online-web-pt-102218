@@ -30,7 +30,12 @@ class Game
   def won?
     PLAYER_TOKENS.each do |t|
       plays = []
-      board.cells.each_with_index do |play|
+      board.cells.each_with_index do |cell, index|
+        if cell == t
+          plays << index
+        end
+      end
+      puts plays
     end
     false
   end
