@@ -34,7 +34,7 @@ class Game
       puts 'looping'
       plays = []
       board.cells.each_with_index do |cell, index|
-        if cell == plays
+        if cell == p
           plays << index
           return true
         end
