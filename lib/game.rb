@@ -59,6 +59,11 @@ class Game
   end       
   
   def draw?
-    if won? == false && board.cells.include?(" ") == false
+    if won? == false && board.full? == false
+      return true
+    else
+      return false
+    end
+  end
     
 end
