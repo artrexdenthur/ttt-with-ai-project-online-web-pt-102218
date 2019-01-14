@@ -39,7 +39,7 @@ class Game
       end
       puts plays
     end
-    false
+    return false
   end
     
 end
