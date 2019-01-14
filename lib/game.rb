@@ -42,7 +42,12 @@ class Game
   
   def has_winning_combo?(plays_arr)
     WIN_COMBINATIONS.each do |combo|
-      if combo.map { |cell| plays_arr.contain?
+      unless combo.map { |cell| plays_arr.include?(cell) }.include?(false)
+        return true
+      end
+    end
+    return false
+  end
         
     
 end
