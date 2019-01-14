@@ -57,5 +57,8 @@ class Game
     end
     return false
   end       
+  
+  def draw?
+    if won? == false && board.cells.include?(" ") == false
     
 end
