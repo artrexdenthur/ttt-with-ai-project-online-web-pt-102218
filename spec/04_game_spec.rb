@@ -16,6 +16,7 @@ describe 'Game' do
 
   describe '#board' do
     it 'provides access to the board' do
+      # binding.pry
       game = Game.new
       game.board = []
       expect(game.board).to eq([])
