@@ -30,5 +30,7 @@ class Game
   def won?
     PLAYER_TOKENS.each do |t|
       plays = board.find_all { |play| play == t }
+    end
+  end
     
 end
