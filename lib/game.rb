@@ -35,7 +35,7 @@ class Game
           plays << index
         end
       end
-      puts p, plays
+      return true if has_winning_combo?(plays)
     end
     return false
   end
