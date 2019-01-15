@@ -65,5 +65,9 @@ class Game
   def over?
     draw? || won?
   end
+  
+  def winner
+    
+  end
     
 end
